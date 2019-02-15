@@ -2,7 +2,7 @@
 # App
 Đăng kí môn học.
 ### Xây dựng ứng dụng quản lý Môn học bằng flask
-![App](https://github.com/vietdug289/vietdug289.github.io/tree/master/App)
+![https://github.com/vietdug289/vietdug289.github.io/tree/master/App](https://github.com/vietdug289/vietdug289.github.io/tree/master/App)
 ## Về cơ sở dữ liệu
 
 Sử dụng cơ sở dữ liệu SQLite3.

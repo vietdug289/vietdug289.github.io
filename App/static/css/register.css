@@ -1,0 +1,49 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    background: linear-gradient(90deg, #1E90FF, #9400D3) no-repeat;
+}
+
+fieldset {
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    width: 60%;
+    height: 90%;
+    margin-top: 20px;
+}
+
+fieldset h1 {
+    text-align: center;
+}
+
+fieldset input {
+    background-color: #D3D3D3;
+    border-radius: 20px;
+    padding: 5px 15px;
+    height: 25px;
+    margin-left: 30px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding-left: 57px;
+}
+
+fieldset #submit {
+    background-color: #32CD32;
+    border-radius: 20px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-left: 110px;
+    margin-top: 15px;
+    padding: 10px 120px 15px 120px;
+    height: 50px;
+}
+
+fieldset #submit:hover {
+    background-color: #696969;
+    transition: .5s;
+}

@@ -1,0 +1,67 @@
+{% extends "home.html"%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infor</title>
+    {% block infor%} {{ super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/infor.css')}}" type="text/css">
+</head>
+
+<body>
+    <h1>Information of user:</h1><br>
+    <fieldset>
+
+        <form action="/home/infor/{{result[0]}}/change" method="POST" class="infor">
+            <div class="menu left-menu">
+                <div>
+                    <label>Username:</label><br>
+                    <input type="text" name="username" value="{{result[1]}}" disabled>
+                </div>
+                <div>
+                    <label>Password:</label><br>
+                    <input type="password" name="password" value="{{result[2]}}">
+                </div>
+            </div>
+            <div class="menu right-menu">
+                <div>
+                    <label>Name:</label><br>
+                    <input type="text" name="name" value="{{result[3]}}">
+                </div>
+
+                <div>
+                    <label>Gmail:</label><br>
+                    <input type="text" name="gmail" value="{{result[4]}}">
+                </div>
+                <div>
+                    <label><Address>Address:</Address></label>
+                    <input type="text" name="address" value="{{result[5]}}">
+                </div>
+            </div>
+            <input type="submit" value="Change" id="changebutton">
+
+    </fieldset>
+    <h1>Danh sach cac mon da dang ki:</h1>
+    <table>
+        <tr>
+
+            <th>ID</th>
+            <th>Name</th>
+            <th>Subject</th>
+        </tr>
+        {% for value in result2 %}
+        <tr>
+            <td>{{value[0]}}</td>
+            <td>{{value[2]}}</td>
+            <td>{{value[3]}}</td>
+            <td><a href="/home/information/delete/{{value[2]}}">Delete</a></td>
+        </tr>
+        {% endfor%}
+    </table>
+    {%endblock%}
+</body>
+
+</html>

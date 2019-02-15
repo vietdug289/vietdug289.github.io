@@ -1,0 +1,79 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form #changebutton {
+    margin-left: 60px;
+    padding: 9px 40px;
+    border-radius: 9px;
+    font-size: 110%;
+    position: relative;
+    margin-top: -45px;
+    margin-bottom: 28px;
+}
+
+form #changebutton:hover {
+    background-color: #A9A9A9;
+    transition: .4s;
+}
+
+fieldset {
+    margin: auto;
+    width: 600px;
+    border-radius: 9px;
+}
+
+form {
+    margin-left: 10px;
+    ;
+}
+
+.menu {
+    float: left;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.menu input {
+    padding: 9px 40px;
+    margin: 12px;
+    border-radius: 9px;
+}
+
+table,
+tr,
+th,
+td {
+    margin: auto;
+    border-collapse: collapse;
+    padding-left: 9px;
+}
+
+#create {
+    font-size: 120%;
+    padding-left: 200px;
+    line-height: 50px;
+    color: blueviolet;
+}
+
+#create:hover {
+    color: darkgreen;
+}
+
+tr {
+    border: 1px solid #dddddd;
+}
+
+td {
+    border: 1px solid #696969;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

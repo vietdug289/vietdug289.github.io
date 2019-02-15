@@ -1,0 +1,45 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body #create {
+    text-align: center;
+    font-size: 30px;
+}
+
+table,
+tr,
+th,
+td {
+    margin: auto;
+    border-collapse: collapse;
+    padding-left: 9px;
+}
+
+#create {
+    font-size: 120%;
+    padding-left: 200px;
+    line-height: 50px;
+    color: blueviolet;
+}
+
+#create:hover {
+    color: darkgreen;
+}
+
+tr {
+    border: 1px solid #dddddd;
+}
+
+td {
+    border: 1px solid #696969;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#submit {
+    margin-left: 450px;
+    ;
+}

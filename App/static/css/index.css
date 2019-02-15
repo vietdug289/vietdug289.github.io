@@ -1,0 +1,28 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table,
+tr,
+th,
+td {
+    margin: auto;
+    border-collapse: collapse;
+    padding-left: 9px;
+}
+
+td a {
+    font-size: 120%
+}
+
+tr {
+    border: 1px solid #dddddd;
+}
+
+td {
+    border: 1px solid #696969;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

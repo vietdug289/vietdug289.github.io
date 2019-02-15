@@ -1,0 +1,30 @@
+{% extends "home.html"%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> {% block subject%} {{super()}}
+    <title>List of Subject</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/listofsubject.css')}}" type="text/css">
+</head>
+
+<body>
+    <div class="mainmenu">
+        <h1>List of subject:</h1>
+        <h2>Total:{{results|length}}(subjects)</h2>
+        {%for row in results%}
+        <li class="list">
+            <div class="subjectname">
+                <a href="/home/List-of-subject/{{row[0]}}">{{row[0]}}-Details:</a>
+            </div>
+        </li>
+        {% endfor%}
+
+    </div>
+</body>
+{%endblock%}
+
+</html>

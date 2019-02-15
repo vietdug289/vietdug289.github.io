@@ -1,0 +1,38 @@
+{% extends "home.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class with subject</title>
+    {% block classsubject%}{{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/listofclass.css')}}" type="text/css">
+</head>
+
+<body>
+    <h1>List of class:{{subjectname}}</h1>
+    <form>
+        <table>
+            <tr>
+
+                <th>ID</th>
+                <th>Name</th>
+                <th>Subject</th>
+            </tr>
+            {% for value in result %}
+            <tr>
+
+                <td>{{value[0]}}</td>
+                <td>{{value[1]}}</td>
+                <td>{{value[2]}}</td>
+            </tr>
+            {% endfor%}
+        </table>
+
+    </form>
+</body>
+{%endblock%}
+
+</html>

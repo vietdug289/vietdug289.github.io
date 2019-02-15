@@ -1,0 +1,40 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.mainmenu {
+    list-style: none;
+    overflow: hidden;
+}
+
+.subjectname {
+    margin-top: 12px;
+}
+
+.subjectname a {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 36px 28px 12px 28px;
+    border: 1px solid black;
+    border-radius: 9px;
+    height: 56px;
+    width: 200px;
+    margin-left: 28px;
+    margin-top: 28px;
+    margin-right: 28px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: #66CDAA;
+}
+
+.subjectname a:hover {
+    background-color: #696969;
+    transition: .4s;
+}

@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    margin: auto;
+    margin-top: 28px;
+    width: 500px;
+    height: 500px;
+    line-height: 28px;
+}
+
+.form #text {
+    height: 20px;
+    width: 500px;
+    padding: 3px 12px 5px;
+    font-size: 19px;
+}
+
+.form li {
+    position: relative;
+}
+
+.form li {
+    font-size: 19px;
+    ;
+}
+
+.form #save {
+    position: relative;
+    padding: 9px 250px 9px 250px;
+    border-radius: 9px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+}
+
+.form #save:hover {
+    background-color: #999999;
+    transition: .5s;
+    font-size: 120%;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}" type="text/css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="menu">
+            <li class="item">
+                <a href="{{url_for('getallsubject')}}" class="btn">Home</a>
+            </li>
+
+            <li class="item">
+                <a href="#" class="btn">List</a>
+                <div class="smenu">
+                    <a href="{{url_for('get_all_class')}}">List of class</a>
+                    <a href="{{url_for('getallsubject')}}">List of subject</a>
+                    <a href="{{url_for('index')}}">List of user</a>
+                </div>
+            </li>
+            <li class="item">
+                <a href="#" class="btn">Profile</a>
+                <div class="smenu">
+                    <a href="{{url_for('getusername')}}">Information</a>
+                    <a href="{{url_for('logout')}}">Log out</a>
+                </div>
+            </li>
+            <li class="item">
+                <a href="#" class="btn">About</a>
+            </li>
+        </div>
+    </div>
+    <div class="main-menu">
+        {% block index %}{%endblock%} {% block infor%}{%endblock%}{%block subject%}{%endblock%}{%block listclass%}{%endblock%} {% block createclass%}{%endblock%} {% block classsubject%}{%endblock%}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+{% extends "home.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create new </title>
+    {% block createclass%} {{super()}}
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/createclass.css')}}" type="text/css">
+
+</head>
+
+<body>
+    <fieldset>
+        <h1>Create</h1>
+        <hr>
+        <form class="form" action="{{url_for('save')}}" method="POST">
+            <label for=""><b>Name of class:</b></label><br>
+            <input id="text" type="text" name="name"><br>
+            <label for=""><b>Choice the Subject of class: </b></label><br> {% for i in subject_name%}
+            <li>
+                <input type="radio" name="subjects" id="id" value="{{i[0]}}"> {{i[0]}}<br>
+            </li>
+            {% endfor%}
+            <br>
+            <input type="submit" value="Save" id="save">
+
+        </form>
+    </fieldset>
+    {%endblock%}
+</body>
+
+</html>

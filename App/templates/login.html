@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}" type="text/css">
+    <title>Login</title>
+    <style>
+        /*
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            height: 100vh;
+            background: linear-gradient(90deg, #1E90FF, #9400D3) no-repeat;
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="login">
+            <a href="/login" id="login">Login</a>
+        </div>
+        <div id="register">
+            <a href="{{url_for('register')}}">New?Register</a>
+        </div>
+    </div>
+    <div>
+        <form action="{{url_for('login')}}" method="POST">
+            <input type="text" name="username" placeholder="Username" required id="input">
+            <input type="password" name="password" placeholder="Password" required id="input">
+            <input type="submit" name="login" value="Login" id="submit">
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

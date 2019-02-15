@@ -1,0 +1,42 @@
+{% extends "home.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>List of class.</title>
+    {% block listclass%} {{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/listofclass.css')}}" type="text/css">
+</head>
+
+<body>
+    <a id="create" href="/home/list-of-class/create-new-class/"><b> + Click here to create new class</b></a>
+    <h1>{{mess}}</h1>
+    <h1>List of class:</h1>
+    <form action="{{url_for('submit_class')}}" method="POST">
+        <table>
+            <tr>
+                <th></th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Subject</th>
+            </tr>
+            {% for value in data_of_class %}
+            <tr>
+                <td><input type="checkbox" name="choices" value="{{value[0]}}"></td>
+                <td>{{value[0]}}</td>
+                <td>{{value[1]}}</td>
+                <td>{{value[2]}}</td>
+            </tr>
+            {% endfor%}
+        </table>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+
+</body>
+{%endblock%}
+
+</html>
